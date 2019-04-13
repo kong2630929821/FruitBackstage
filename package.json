@@ -18,6 +18,7 @@
   "homepage": "https://github.com/kong2630929821/FruitBackstage#readme",
   "devDependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "leancloud-storage": "^3.11.1",
     "leanengine": "^3.3.2",
