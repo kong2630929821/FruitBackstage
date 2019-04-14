@@ -26,6 +26,20 @@ let loginModel = {
         db.query(sql,(err,data)=>{
             fn(err,data)
         })
+    },
+    //头像上传
+    uploads:(id,img,fn)=>{
+        let sql='UPDATE user SET u_img="'+img+'" WHERE u_id='+id+';';
+        db.query(sql,(err,data)=>{
+            fn(err,data);
+        })
+    },
+    //修改个人资料
+    changeUserInfo:(userInfo,fn)=>{
+        const sql='UPDATE USER SET u_name="'+userInfo.name+'",u_account="'+userInfo.account+'",u_pass="'+userInfo.pass+'",u_phone="'+userInfo.phone+'",u_mail="'+userInfo.mail+'",u_sex="'+userInfo.sex+'" WHERE u_id='+userInfo.id+';';
+        db.query(sql,(err,data)=>{
+            fn(err,data);
+        })
     }
 };
 
