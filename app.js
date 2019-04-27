@@ -6,6 +6,7 @@ let multer=require('./unitls/upload.js');//上传文件
 let strong=require('leancloud-storage');//缓存
 let loginModel = require('./model/loginModel.js');
 let loginRoute = require('./route/loginRoute.js');//登入相关路由
+let communityRoute=require('./route/communityRoute.js');//发布的路由
 let cors=require('cors');//跨域
 let app=express();
 app.use(express.static(__dirname+'/public'));
@@ -99,8 +100,13 @@ app.post('/uploads',multer.single('files'),(req,res)=> {
       }
    })
 });
+//图片上传
+app.post('/upload',multer.array('files',9),function (req,res) {
+   res.send({error:0});
+});
 /*=============================使用路由=============================*/
 app.use(loginRoute);
+app.use(communityRoute);
 app.listen(1086,function () {
    console.log('项目启动')
 });

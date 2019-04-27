@@ -9,7 +9,12 @@ let storage = multer.diskStorage({
     },
     filename: (req, file, cb)=> {//指定文件名和扩展名
         let arr=file.originalname.split('.');
-        cb(null,arr[0]+'.'+arr[1])
+        let str='';
+        for(let i=0;i<arr.length-1;i++){
+            str+=arr[i]+'.';
+        }
+        str+=arr[arr.length-1];
+        cb(null,str);
     }
 });
 let upload = multer({ storage: storage});
