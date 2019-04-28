@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f87fe7e-bb2e-419e-abd7-978535b7c0bc" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/model/communityModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/route/communityRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/push/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/controller/communityController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unitls/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/unitls/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/communityController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/communityController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/communityModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/communityModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route/communityRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/route/communityRoute.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +21,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2611">
+            <state relative-caret-position="3060">
               <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
             </state>
           </provider>
@@ -32,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/route/communityRoute.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+            <state relative-caret-position="480">
+              <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -41,12 +39,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/communityController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="102" column="43" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
+            <state relative-caret-position="360">
+              <caret line="394" column="84" selection-start-line="394" selection-start-column="84" selection-end-line="394" selection-end-column="84" />
               <folding>
-                <element signature="e#107#123#0" />
-                <element signature="e#765#3420#0" />
-                <element signature="e#2409#2425#0" />
+                <element signature="e#107#735#0" />
+                <element signature="e#765#2264#0" />
+                <element signature="e#2293#4336#0" />
+                <element signature="e#4361#4641#0" />
+                <element signature="e#5208#6610#0" />
+                <element signature="e#5691#5914#0" />
+                <element signature="e#5938#6161#0" />
+                <element signature="e#5945#6171#0" />
+                <element signature="e#8657#8673#0" />
+                <element signature="e#8900#8916#0" />
+                <element signature="e#9716#9732#0" />
+                <element signature="e#12065#12081#0" />
+                <element signature="e#14342#14358#0" />
               </folding>
             </state>
           </provider>
@@ -55,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/communityModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+            <state relative-caret-position="1187">
+              <caret line="209" column="54" selection-start-line="209" selection-start-column="54" selection-end-line="209" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -122,6 +130,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>removeDiscuss</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -140,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="1380" />
     <option name="height" value="735" />
@@ -153,6 +166,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,7 +198,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,16 +247,20 @@
       <workItem from="1556338017778" duration="671000" />
       <workItem from="1556341486808" duration="365000" />
       <workItem from="1556341882638" duration="18307000" />
+      <workItem from="1556421972138" duration="5807000" />
+      <workItem from="1556430445143" duration="199000" />
+      <workItem from="1556430670187" duration="13507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45974000" />
+    <option name="totallyTimeSpent" value="65487000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12434141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08746049" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -267,17 +284,20 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/public/images/push/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="3060">
+          <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/loginController.js">
+    <entry file="file://$PROJECT_DIR$/unitls/upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="13" selection-start-line="6" selection-start-column="12" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="480">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -288,20 +308,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/push/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unitls/upload.js">
+    <entry file="file://$PROJECT_DIR$/controller/loginController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2611">
-          <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
+        <state relative-caret-position="420">
+          <caret line="14" column="13" selection-start-line="6" selection-start-column="12" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -319,28 +329,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/route/communityRoute.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        <state relative-caret-position="480">
+          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/communityModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        <state relative-caret-position="1187">
+          <caret line="209" column="54" selection-start-line="209" selection-start-column="54" selection-end-line="209" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/communityController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="102" column="43" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
+        <state relative-caret-position="360">
+          <caret line="394" column="84" selection-start-line="394" selection-start-column="84" selection-end-line="394" selection-end-column="84" />
           <folding>
-            <element signature="e#107#123#0" />
-            <element signature="e#765#3420#0" />
-            <element signature="e#2409#2425#0" />
+            <element signature="e#107#735#0" />
+            <element signature="e#765#2264#0" />
+            <element signature="e#2293#4336#0" />
+            <element signature="e#4361#4641#0" />
+            <element signature="e#5208#6610#0" />
+            <element signature="e#5691#5914#0" />
+            <element signature="e#5938#6161#0" />
+            <element signature="e#5945#6171#0" />
+            <element signature="e#8657#8673#0" />
+            <element signature="e#8900#8916#0" />
+            <element signature="e#9716#9732#0" />
+            <element signature="e#12065#12081#0" />
+            <element signature="e#14342#14358#0" />
           </folding>
         </state>
       </provider>
