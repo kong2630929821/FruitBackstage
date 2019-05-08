@@ -7,6 +7,7 @@ let strong=require('leancloud-storage');//缓存
 let loginModel = require('./model/loginModel.js');
 let loginRoute = require('./route/loginRoute.js');//登入相关路由
 let communityRoute=require('./route/communityRoute.js');//发布的路由
+let shopListRoute=require('./route/shopListRoute.js');//商品列表路由
 let cors=require('cors');//跨域
 let app=express();
 app.use(express.static(__dirname+'/public'));
@@ -29,7 +30,7 @@ app.post('/getCode',function (req,res) {
       mobilePhoneNumber:req.body.phone,
       name: '果思',
       op: '短信验证',
-      ttl: 10                     // 验证码有效时间为 10 分钟
+      ttl: 10 // 验证码有效时间为 10 分钟
    }).then(function(res){
       //调用成功
       console.log(req.body.phone);
@@ -107,6 +108,7 @@ app.post('/upload',multer.array('files',9),function (req,res) {
 /*=============================使用路由=============================*/
 app.use(loginRoute);
 app.use(communityRoute);
+app.use(shopListRoute);
 app.listen(1086,function () {
    console.log('项目启动')
 });
