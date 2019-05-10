@@ -14,6 +14,19 @@ let loginController={
                 }
             }
         })
+    },
+    phoneLogin:(req,res)=>{
+        loginModel.phoneLogin(req.body.phone,(err,data)=>{
+            if(err){
+                console.log('账号登入数据库错误');
+            }else{
+                if(data.length){
+                    res.send({error:1,data:data});
+                }else{
+                    res.send({error:0});
+                }
+            }
+        })
     }
 };
 

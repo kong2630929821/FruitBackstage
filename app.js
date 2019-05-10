@@ -82,7 +82,6 @@ app.post('/changeUserInfo',function (req,res) {
          if(err){
             console.log('数据库错误');
          }else{
-            console.log(data);
             res.send({error:1,data:data});
          }
       })

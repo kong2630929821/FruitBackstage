@@ -470,6 +470,15 @@ let shopListController={
                 }
             }
         })
+    },
+    setCollection:(req,res)=>{
+        shopListModel.setCollection(req.body.s_id,(err,data)=>{
+            if(err){
+                console.log('设置商品加入购物车数量数据库错误');
+            }else{
+                res.send({error:1});
+            }
+        })
     }
 };
 

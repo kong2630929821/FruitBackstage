@@ -26,4 +26,5 @@ myRouter.route('/evaluationProduct').post(shopListConroller.evaluationProduct);/
 myRouter.route('/setShoppingInfo').post(shopListConroller.setShoppingInfo);//更新商品的库存和购买人数
 myRouter.route('/getShoppingNum').post(shopListConroller.getShoppingNum);//获取商品的库存
 myRouter.route('/getShoppingNums').post(shopListConroller.getShoppingNums);//获取当前商品的库存
+myRouter.route('/setCollection').post(shopListConroller.setCollection);//获取当前商品的加入购物车数量
 module.exports=myRouter;

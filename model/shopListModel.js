@@ -153,6 +153,12 @@ let shopListModel = {
         db.query(sql,(err,data)=>{
             fn(err,data);
         })
+    },
+    setCollection:(s_id,fn)=>{
+        let sql='UPDATE shop SET s_love=s_love+1 WHERE s_id='+s_id+'';
+        db.query(sql,(err,data)=>{
+            fn(err,data);
+        })
     }
 };
 

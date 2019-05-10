@@ -40,12 +40,15 @@ let communityController={
                             json.p_time=data[i].p_time;
                             json.src='';
                             for(var j=0;j<data1.length;j++){
-                                if(json.src){
-                                    json.src=json.src+'|'+data1[j].pi_img;
-                                }else{
-                                    json.src=json.src+data1[j].pi_img;
+                                if(json.p_id==data1[j].p_id){
+                                    if(json.src){
+                                        json.src=json.src+'|'+data1[j].pi_src;
+                                    }else{
+                                        json.src=json.src+data1[j].pi_src;
+                                    }
                                 }
                             }
+                            console.log(json);
                             array.push(json);
                         }
                         res.send({error:1,data:array});
@@ -219,6 +222,7 @@ let communityController={
     removeDiscuss:(req,res)=>{
 
         communityModel.findUnDisNum(req.body.p_id,req.body.d_id,(err,data1)=>{
+            let n;
             if(err){
                 console.log('查找有多少个回复数据库错误')
             }else{
@@ -228,9 +232,9 @@ let communityController={
                         console.log('删除评论数据库错误');
                     }else{
                         if(data1.length){
-                            let n=data1.length+1;
+                            n=data1.length+1;
                         }else{
-                            let n=1;
+                            n=1;
                         }
                         communityModel.unChangeReplyNum(req.body.p_id,n,(err,data3)=>{
                             if(err){
