@@ -212,5 +212,11 @@ var communityModel={
             fn(err,data);
         })
     },
+    deleteTopic:(p_id,u_id,fn)=>{
+        let sql='DELETE FROM push WHERE p_id='+p_id+' AND u_id='+u_id+';';
+        db.query(sql,(err,data)=>{
+            fn(err,data);
+        })
+    }
 };
 module.exports=communityModel;

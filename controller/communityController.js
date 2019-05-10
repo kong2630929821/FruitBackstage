@@ -434,5 +434,15 @@ let communityController={
             }
         })
     },
+    deleteTopic:(req,res)=>{
+        communityModel.deleteTopic(req.body.p_id,req.body.u_id,(err,data)=>{
+            let i=0;
+            if(err){
+                console.log('删除当前话题数据库错误');
+            }else{
+                res.send({error:1});
+            }
+        })
+    }
 };
 module.exports=communityController;

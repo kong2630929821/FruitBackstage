@@ -17,4 +17,5 @@ myRouter.route('/like').post(communityController.like);//点赞
 myRouter.route('/collect').post(communityController.collect);//点赞
 myRouter.route('/findLike').post(communityController.findLike);//获取当前用户是否点赞
 myRouter.route('/findCollect').post(communityController.findCollect);//获取当前用户是否收藏
+myRouter.route('/deleteTopic').post(communityController.deleteTopic);//获取当前话题
 module.exports=myRouter;
