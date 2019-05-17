@@ -27,6 +27,15 @@ let loginController={
                 }
             }
         })
+    },
+    changeUserInfo:(req,res)=>{
+        loginModel.changeUserInfo(req.body.userInfo,req.body.pass,(err,data)=>{
+            if(err){
+                console.log(err)
+            }else{
+                res.send({error:1});
+            }
+        })
     }
 };
 

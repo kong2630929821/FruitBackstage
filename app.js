@@ -75,21 +75,22 @@ app.post('/loginPhone',function (req,res) {
    });
 });
 //验证码修改资料
-app.post('/changeUserInfo',function (req,res) {
-   AV.Cloud.verifySmsCode(req.body.code,req.body.phone).then(function(){
-      //验证成功
-      loginModel.changeUserInfo(req.body.userInfo,(err,data)=>{
-         if(err){
-            console.log('数据库错误');
-         }else{
-            res.send({error:1,data:data});
-         }
-      })
-   }, function(err){
-      //验证失败
-      res.send({"error":0})
-   });
-});
+// app.post('/changeUserInfo',function (req,res) {
+//    AV.Cloud.verifySmsCode(req.body.code,req.body.phone).then(function(){
+//       //验证成功
+//       console.log(req.body.userInfo);
+//       loginModel.changeUserInfo(req.body.userInfo,req.body.pass,(err,data)=>{
+//          if(err){
+//             console.log('数据库错误');
+//          }else{
+//             res.send({error:1,data:data});
+//          }
+//       })
+//    }, function(err){
+//       //验证失败
+//       res.send({"error":0})
+//    });
+// });
 //头像上传
 app.post('/uploads',multer.single('files'),(req,res)=> {
    loginModel.uploads(req.body.u_id,req.body.files,(err,data)=> {

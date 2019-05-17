@@ -35,8 +35,8 @@ let loginModel = {
         })
     },
     //修改个人资料
-    changeUserInfo:(userInfo,fn)=>{
-        const sql='UPDATE USER SET u_name="'+userInfo.name+'",u_account="'+userInfo.account+'",u_pass="'+userInfo.pass+'",u_phone="'+userInfo.phone+'",u_mail="'+userInfo.mail+'",u_sex="'+userInfo.sex+'" WHERE u_id='+userInfo.id+';';
+    changeUserInfo:(userInfo,pass,fn)=>{
+        const sql='UPDATE USER SET u_name="'+userInfo.u_name+'",u_account="'+userInfo.u_account+'",u_pass="'+pass+'",u_phone="'+userInfo.u_phone+'",u_mail="'+userInfo.u_mail+'",u_sex="'+userInfo.u_sex+'" WHERE u_id='+userInfo.u_id+';';
         db.query(sql,(err,data)=>{
             fn(err,data);
         })
